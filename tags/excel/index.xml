@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Excel on Data Analytics Portfolio</title>
-    <link>http://Keisha-G.github.io/tags/excel/</link>
+    <link>http://localhost:1313/tags/excel/</link>
     <description>Recent content in Excel on Data Analytics Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://Keisha-G.github.io/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/excel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Types and Attributes of Data Visulisations and When they should be Used</title>
-      <link>http://Keisha-G.github.io/posts/data-visulisations/</link>
+      <link>http://localhost:1313/posts/data-visulisations/</link>
       <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://Keisha-G.github.io/posts/data-visulisations/</guid>
+      <guid>http://localhost:1313/posts/data-visulisations/</guid>
       <description>There are many different types of data visulisations. However, a skilled data analyst will use the most effective type of visulisation to visually aid the &amp;lsquo;storytelling&amp;rsquo; / what story the data shows. Not only do suitable data vcisulisations aid in this, but bad choices for data visulisations can mislead an audience to believing falsehoods or just confuse them.&#xA;The following graph is the standard &amp;lsquo;bad&amp;rsquo; visulisation - looking at the graph below, what do you immediately infer about gun deaths in Florida?</description>
     </item>
   </channel>
