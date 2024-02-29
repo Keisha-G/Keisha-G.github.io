@@ -186,7 +186,8 @@
 <p>Inverting the y axis so &lsquo;0&rsquo; is at the top is the first error; this makes it seem that the all-time-high of gun deaths was in the early 1990s instead of teh late 1990s. The choice to use the colour red also solidifies the previous error - artistic, sure. It looks like blood but it makes it look like the law enacted in 2005 had the opposite affect then what was intended.</p>
 <p>Now we know what&rsquo;s at stake with bad data visulisations, the following article will show common data visulisations techniques and describe when they should be used.</p>
 <h1 id="line-graphs">Line Graphs</h1>
-<p>Line graphs are good to see the gradient / how much a value changes over time. This can be observed from how steep the line is between two markers.</p>
+<p>Line graphs are good to see the gradient / how much a value changes over time. This can be observed from how steep the line is between two markers. So for exmaple, the housing prices in Canada Bay increased much more from 2016-2021 than any other period dshown on the graph below; this can be infered becuase of the steepness of the line. If you have a graph that is not inherently line based, you can get the benefit of one by using a trend line.</p>
+<p><img src="/images/Data-Visulisations/line-chart.png" alt="Line Chart Example"></p>
 <h1 id="data-tables">Data Tables</h1>
 <p>While graphs are good for getting broad overviews of data, they are less useful to see exact values. In an instance where the values are numbers in the millions, having labels near the markers would make the visualisation cluttered. Lines from the data table extending upwards also helps guide the readers’ eye to align the data point with the corresponding year. These tables are usually exported from excel with some sort of assiting excel visulisation.</p>
 <h2 id="excel-visulisations">Excel Visulisations</h2>
@@ -196,24 +197,18 @@
 <h3 id="sparklines">Sparklines</h3>
 <p><em>Sparklines are a condensed and highly succinct way to see the shape of an attribute over time</em>. Like data bars, they are also a conditional format in Excel which is used to give a quick and small visualisation to increase intuition when searching for patterns in the data.</p>
 <h3 id="directional-icon-sets">Directional Icon Sets</h3>
-<p>Directional icon sets, like other conditional formatting like data bars and sparklines, <em>allow for condensed and easy viewing of patterns and trends within attributes</em>. Different conditional formatting can be combined as seen in the table relating to dwelling status below.</p>
+<p>Directional icon sets, like other conditional formatting like data bars and sparklines, <em>allow for condensed and easy viewing of patterns and trends within attributes</em>. Different conditional formatting can be combined as seen in the examples below.</p>
+<p><img src="/images/Data-Visulisations/databars.png" alt="Combination of conditional formatting example"></p>
 <h1 id="colour">Colour</h1>
-<p>Colour is useful to differentiate attributes. Colour dichotomies such as green / red can communicate quickly to a user good and bad attributes as seen in the stacked area chart. This should be kept in mind as bad use of colour can be misleading.</p>
-<h1 id="trendlines">Trendlines</h1>
-<p>trendlines are good for predicting future values. The rate of change can also be seen by the gradient of the line.</p>
+<p>Colour is useful to differentiate attributes. Colour dichotomies such as green / red can communicate quickly to a user good and bad attributes as seen in the stacked area chart. This should be kept in mind as bad use of colour can be misleading. A bad use of colour was showcased in the Gun Deaths in Florida graph above.</p>
 <h1 id="pie-chart">Pie Chart</h1>
 <p>Pie charts are great to see different statistics as part of a whole – or how ratios are proportionate to each other. Although, they only work for a smaller number of attributes with a maximum of 4 or 5. If individual segments are too small, this could lead to too many segments having labels that are outside the ‘pie’ and the graph being very cluttered.</p>
 <h1 id="title-and-axis-reformatting">Title and Axis Reformatting</h1>
-<p>Formatting such as titles, axis’ and datapoint labelling work to increase clarity in message.</p>
-<p>changing attributes such as the scale on an axis can done to make predictive visulisations extend further into the future - this is particularly useful for a trerndline or a supply and demand graph.</p>
+<p>Formatting such as titles, axis’ and datapoint labelling work to increase clarity in message. Changing attributes such as the scale on an axis can done to make predictive visulisations extend further into the future - this is particularly useful for a trerndline or a supply and demand graph.</p>
 <h1 id="pareto-chart">Pareto Chart</h1>
 <p>A Pareto Chart is a chart where the attributes are ordered from largest to smallest and a line shows the cumulative sum of all the attributes before it. It is good to see which attributes contribute the most towards a whole.</p>
 <h1 id="treemap">Treemap</h1>
 <p>Treemaps are good for the same reason. It facilitates the easy viewing of the proportions of attributes towards a single whole.</p>
-<h1 id="bar-graph">Bar Graph</h1>
-<p>Bar graphs are good for when labels are at risk of being too long to fit on a column graph.</p>
-<h2 id="stacked-column">Stacked Column</h2>
-<p>Stacked Column graphs are good to see proportions of attributes.</p>
 
         </p>
         
@@ -280,16 +275,10 @@
       </ul>
     </li>
     <li><a href="#colour">Colour</a></li>
-    <li><a href="#trendlines">Trendlines</a></li>
     <li><a href="#pie-chart">Pie Chart</a></li>
     <li><a href="#title-and-axis-reformatting">Title and Axis Reformatting</a></li>
     <li><a href="#pareto-chart">Pareto Chart</a></li>
     <li><a href="#treemap">Treemap</a></li>
-    <li><a href="#bar-graph">Bar Graph</a>
-      <ul>
-        <li><a href="#stacked-column">Stacked Column</a></li>
-      </ul>
-    </li>
   </ul>
 </nav>
     </nav>

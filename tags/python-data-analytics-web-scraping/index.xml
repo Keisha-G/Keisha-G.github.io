@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python, Data Analytics, Web Scraping on Data Analytics Portfolio</title>
+    <link>http://localhost:1313/tags/python-data-analytics-web-scraping/</link>
+    <description>Recent content in Python, Data Analytics, Web Scraping on Data Analytics Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python-data-analytics-web-scraping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Scraping (Twitter)</title>
+      <link>http://localhost:1313/posts/web-scraping-twitter/</link>
+      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/web-scraping-twitter/</guid>
+      <description>For my honours project (for more details, check the &amp;lsquo;projects&amp;rsquo; tab), I needed to build a program that would scrape Twitter/X for tweets. This was done using the snscrape library and Python.&#xA;import snscrape.modules.twitter as sntwitter import pandas as pd import requests import re class TwitterScraper: query = &amp;#34;placeholder&amp;#34; tweet_num = 1 def scrape(self, query, tweet_num): self.query = query self.tweet_num = int(tweet_num) - 1 tweets = [] for i, tweet in enumerate(sntwitter.</description>
+    </item>
+  </channel>
+</rss>
