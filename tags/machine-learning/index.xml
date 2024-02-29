@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Feb 2024 17:36:20 +1100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Honours Project</title>
+      <link>http://localhost:1313/posts/honoursproject/</link>
+      <pubDate>Sat, 24 Feb 2024 17:36:20 +1100</pubDate>
+      <guid>http://localhost:1313/posts/honoursproject/</guid>
+      <description>I undertook my honours during my fourth year of university. In my research project, I wanted to experiment with different types of dataset collection and preprocessing methodologies and how they affected the performance of Topic models (a type of AI model).&#xA;The goal of a topic model is to summarise a long piece of text/s by examining the co-occurrence patterns of words and organising the words it sees into a &amp;rsquo;topic&#39;.</description>
+    </item>
+  </channel>
+</rss>
