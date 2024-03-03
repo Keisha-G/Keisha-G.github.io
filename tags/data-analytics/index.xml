@@ -16,6 +16,13 @@
       <description>For my honours project (for more details, check the &amp;lsquo;Projects&amp;rsquo; tab), I needed to build a program that would scrape Twitter/X for tweets. This was done using the snscrape library and Python. This project also had a front-end interface in order to give the program inputs instead of doing it through the CLI.&#xA;The program takes in the number of total tweets wanted and what hashtag you want the scraper to crawl through to collect them.</description>
     </item>
     <item>
+      <title>What is Data Preprocessing?</title>
+      <link>https://keisha-g.github.io/posts/data-preprocessing/</link>
+      <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://keisha-g.github.io/posts/data-preprocessing/</guid>
+      <description>Data preprocessing is a crucial step in the data analysis pipeline that involves cleaning, transforming, and preparing raw data for analysis. It aims to improve the quality, consistency, and usability of the data by addressing issues such as missing values, outliers, inconsistencies, and formatting errors. Data preprocessing is essential for ensuring that the data is suitable for analysis and modeling tasks.&#xA;Data preprocessing is a crucial step in the data analysis pipeline that involves cleaning, transforming, and preparing raw data for analysis.</description>
+    </item>
+    <item>
       <title>Bias in Machine Learning and AI</title>
       <link>https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/</link>
       <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
