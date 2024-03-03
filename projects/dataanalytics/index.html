@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Data Analytics Project: Annalysing Australian Trade 2023</title>
+    <meta name="description" content="Hi! I&#39;m Keisha Gordon - a recently graduated computer science student from UTS majoring in Artificial Intelligence and Data Analytics. This is my portfolio site with a compilation of my projects. I also have posts sumarising what I have learnt in my time at uni. I look foward to hearing from you! ">
+    <meta name="keywords" content='blog, gokarna, hugo, Data Analytics, Portfolio'>
+
+    <meta property="og:url" content="https://keisha-g.github.io/projects/dataanalytics/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Data Analytics Project: Annalysing Australian Trade 2023">
+    <meta property="og:description" content="Hi! I&#39;m Keisha Gordon - a recently graduated computer science student from UTS majoring in Artificial Intelligence and Data Analytics. This is my portfolio site with a compilation of my projects. I also have posts sumarising what I have learnt in my time at uni. I look foward to hearing from you! ">
+    <meta property="og:image" content="https://keisha-g.github.io/images/GitAvatar.png">
+    <meta property="og:image:secure_url" content="https://keisha-g.github.io/images/GitAvatar.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Data Analytics Project: Annalysing Australian Trade 2023">
+    <meta name="twitter:description" content="Hi! I&#39;m Keisha Gordon - a recently graduated computer science student from UTS majoring in Artificial Intelligence and Data Analytics. This is my portfolio site with a compilation of my projects. I also have posts sumarising what I have learnt in my time at uni. I look foward to hearing from you! ">
+    <meta property="twitter:domain" content="https://keisha-g.github.io/projects/dataanalytics/">
+    <meta property="twitter:url" content="https://keisha-g.github.io/projects/dataanalytics/">
+    <meta name="twitter:image" content="https://keisha-g.github.io/images/GitAvatar.png">
+
+    
+    <link rel="canonical" href="https://keisha-g.github.io/projects/dataanalytics/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.315e3e4471e2465f34b6c92d59edceac6f6b3d3844df51bbaac4e5f7227b04e4.js"></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://keisha-g.github.io/">
+                <img src='/images/avatar.webp' alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://keisha-g.github.io/">Data Analytics Portfolio</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://keisha-g.github.io/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://keisha-g.github.io/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://keisha-g.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://keisha-g.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://keisha-g.github.io/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://keisha-g.github.io/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://keisha-g.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://keisha-g.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1>Data Analytics Project: Annalysing Australian Trade 2023</h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p><strong>The visulisations in this post are demonstrations of skills in excel and tableau (although tableau visulisations do not have interactivity as intended due to licensing issues).</strong></p>
+<h1 id="introduction">Introduction</h1>
+<p>This page is a report on data about Australian international trade. This report will highlight key information and trends on Australian international imports and exports with data that spans from 1988 - 2022. This report will also focus on the import &amp; export main category of &lsquo;0: food and live animals&rsquo; for closer analysis.</p>
+<p>The first section of this page details the data transformations that have been performed on the dataset and how they have been imported into tableau. After this section will be the main analysis of the data. To assist in data comprehension, data visualisations will be provided. This section will consist of analysis of all the main categories and then go more in depth into the ‘food and live animals’ category and how its subcategories change over time. Finally, the conclusion of the document will give policy recommendatons.</p>
+<h1 id="data-preparation">Data Preparation</h1>
+<p>The dataset used for this annalysis can be viewed <a href="https://docs.google.com/spreadsheets/d/1AtaDk31VnLVesz8mBKaVL2zE4LGrSdNY/edit?usp=sharing&amp;ouid=115818023566474535383&amp;rtpof=true&amp;sd=true">here</a>.</p>
+<p>The original dataset consisted of two sheets, one corresponding to imports and the other corresponding to exports. These sheets had the amount (in millions) of a certain category of goods that was imported / exported each year. The dataset has values from 1988 – 2022. In the report, this will be known as either the ‘original dataset’ or the ‘raw dollar’ data.</p>
+<p>The first sheets that were prepared were the ‘statistical’ import and export sheets. This sheet shows how much as a percentage a given main category contributes to the overall total export/import amount or how much as a percentage a given sub-category contributes to its main category. These values were calculated by dividing the main category’s value by the total export/import amount for the year or the subcategory amount by the main category’s value.</p>
+<p><img src="/images/Australian-Trade/Picture2.png" alt="dataset snapshot"></p>
+<p>The second sheets that were created were ‘analytical’ import and export sheets. This sheet shows the increase or decrease of a category / sub-category each year. These values were calculated by dividing the raw dollar value of the given year over the year before. As 1988 is the first year recorded in the dataset, its value was defaulted to 100%.</p>
+<p><img src="/images/Australian-Trade/Picture3.png" alt="dataset snapshot"></p>
+<p>After all these additional sheets were created, the import and export counterparts were joined into the same sheet which ended up in 3 combined sheets. To differentiate the import and export data, a new column ‘trade’ was added (trade can either be {import, export}). The names of the three combined sheets are as follows:</p>
+<p><img src="/images/Australian-Trade/Picture4.png" alt="dataset snapshot"></p>
+<p>Other minor changes that were made to the dataset include the cells being formatted from decimals to percentages (where applicable) and the values for the ‘year’ column (like Y2001, Y1990 - which are string values) had the ‘Y’ that was appended to the front of the year removed with the equa1on <code>=RIGHT(A1, LEN(A1) - 1)</code> where A1 is the old value (So a value like <code>Y2001</code> would turn into <code>2001</code> - a string value to a numerical value). This is so that when the values were imputed to tableau, they would be recognised as numerical time values. This is important as some visualisations like continuous line charts are easier to do with time-based data. Also, if the values were left as string values, it would not be possible to do calculations with them.</p>
+<p>When the data was inputted to tableau, the three combined sheets were joined on the year and the trade columns. The ‘time’ column was also changed to a time-based attribute.</p>
+<p>I then sourced data outside the dataset and added them as new sheets. Data about what Free Trade Agreements (FTAs) Australia had made (Australian Government | Department of Foreign Affairs and Trade, 2023) and which countries were top buyers of Australian food products (World Trade OrganiatonAustralian Government | Department of Foreign Affairs and Trade, 2017) were both put into their own sheets and then the first sheet was joined to the others through time and the second sheet was joined to the FTA sheet via country. Below are a couple of example rows:</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Country / Group in FTA with Aus</th>
+<th>FTA Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1983</td>
+<td>New Zealand</td>
+<td>ANZCERTA</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>Singapore</td>
+<td>SAFTA</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>United States</td>
+<td>TAFTA</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Major Agriculture Export Market</th>
+<th>Share of Total (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>China</td>
+<td>19.9</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>10.1</td>
+</tr>
+<tr>
+<td>United States</td>
+<td>8.7</td>
+</tr>
+</tbody>
+</table>
+<h1 id="data-analysis">Data Analysis</h1>
+<h2 id="all-main-categories-and-subcategories">All Main Categories and SubCategories</h2>
+<p>This section of the post will have a brief analysis of all the main categories and their relationships to their subcategories. The category of food and live animals will be explored in further depth in the next section.</p>
+<p>The line charts below show the raw-dollar values of each of the main categories in the dataset and how they changed over time.</p>
+<p>Mineral resources such as coal, petroleum and gas (category 3) play a large role in Australia’s economy as mining is one of Australia’s biggest industries. Because of this, there is a massive amount of these materials exported and thus, it is the biggest export for Australia. The second dominant category for exports is inedible crude materials (not including fuels). One of the biggest subcategories of this main category is Metalliferous ores and metal scrap, which would likely be a by-product of mining fuels. Another one of the main contributors to this category in recent years is cork and wood, especially as logging activity has been increasing exponentially.</p>
+<p>On a graph that shows the raw dollar value like the line chart below, products that are more expensive may seem to be performing better. This can especially be seen on the corresponding ‘imports’ line chart, where main category 7, machinery and transport equipment, is far and away the biggest import to Australia as Australia does not have a large machinery and transport industry (as proved by the relatively low export value of the same category). These products are also quite expensive which makes category 7 on the imports line chart outperform the other categories significantly. This is concerning not only because it is a very profitable industry that Australia is missing out on (Australia tends to export simple products such as raw fuels and agriculture based goods), but it’s also concerning as Australia depends on other countries for the majority of it’s mining equipment (SEA FREIGHT, 2022).</p>
+<p>As such, large machinery and transport is one of the smallest industries in Australia. Another one of the smallest industries include 4, animal and vegetable oils, and 1, beverages and tobacco. With the falling decline of smoking (and the fact that tobacco doesn’t grow well naturally in Australia) coupled with the fact that in 2020, China imposes tariffs on Australian wine due to tensions (Speers &amp; Borys, 2023) (wine has the biggest impact on this category as it is the most expensive beverage), it is projected to be the worst performing industry in future years – this can clearly be seen in the line chart below (Export Finance Australia, Australian Government, 2022).</p>
+<p>The tensions between Australia and China in 2020 pertained mostly to dumping, which in this context is the act of the foreign producer taking advantage of domestic subsidies to make their foreign product cheaper. Australia’s dumping was declared a breach of the free trade agreement they had made in 2015 and thus, wine and barley have been permanently tariffed since 2020. This resulted in the fall of category 0, food and live animals and category 1, beverages and tobacco as said before. Though not directly mentioned by China to be related to these same tariffs, during these tensions, Australian coal spent a longer time at the Chinese border, which contributed to the significant dip of category 3 in 2020. Though not the only factor to the fall of this category in 2020, it was a substantial factor as China is the biggest market that Australia exports to. The other main reason that contributed to this is the effect of COVID on international trade, with the majority of imports and exports decreasing in 2020.</p>
+<p><img src="/images/Australian-Trade/Picture15.png" alt="dataset snapshot"></p>
+<p><img src="/images/Australian-Trade/Picture16.png" alt="dataset snapshot"></p>
+<p>From the import graph above, we can also see that the global market for mineral fuels is very dynamic, which may be a concern as Australia imports ~90% of the petrol that Australians need for daily life.</p>
+<h2 id="food-and-live-animals">Food and Live Animals</h2>
+<p>This section of the post will analyse the main category of food and live animals and its sub-categories in depth.</p>
+<p>Free Trade Agreements and Major Markets: As implied before with the men1on of China, free trade agreements (FTA - agreements that allow both countries preferential access to each other’s markets (Australian Government, n.d.)) are one of the biggest factors to success in international trade. As can be seen below, Australia mostly has trade agreements within the Asia pacific region. Within the Food and Live Animals category, the major agriculture export markets of Australia in-order include <strong>China, Japan, United States, Republic of Korea, Indonesia, India, New Zealand, Vietnam, Hong Kong (SAR of China) and Singapore</strong>.</p>
+<ul>
+<li>Almost all countries in this list have ra1fied FTAs with Australia within the dates in the dataset. The only exception is India, which only made a free trade agreement with Australia in 2023 (technically 29 December 2022 - (Dziedzic, 2022)).</li>
+</ul>
+<p><img src="/images/Australian-Trade/Picture17.png" alt="dataset snapshot"></p>
+<p>On the geographical map above generated by tableau, Hong Kong and Singapore don’t appear on the map as tableau considers both countries parts of China and Malaysia respectively though they are different for our purposes.</p>
+<p>On the dashboard on the below, we can see that the exports of food and live animals has generally increased over time. We can see when COVID happened there was a dip in exports as well as an extremely steep period in the following years. Going through the years chronologically, the first point of interest is in 1998, where the export of sugar and honey went from 1723M in the previous year to $180M (decrease of 90%). After this point, production of sugar and honey never increased again. There isn’t a solid reason why this is so, but a few hypotheses include sugar, sugar preparations and honey were not being sold as they were but were being processed into other products like confectionery which would qualify them for category 9. Another reason could be that the definition of what constitutes a ‘sugar preparation’ changed in 1998 or that international imports of sugar were overwhelming local production.</p>
+<p><img src="/images/Australian-Trade/Picture24.png" alt="dataset snapshot"></p>
+<p>The next interesting point is in 2003 where the fall of cereals and cereal preparations fell by a significant amount. This impacted the overall export of food and live animal main category despite one of the first FTAs with Singapore taking effect this year although it should be considered that Singapore is only the 10th biggest market that buys Australia’s goods and the FTA was only put into effect halfway through the year.</p>
+<p>There are certain subcategories that contribute to a large majority of the total of the food and live animals’ category; cereals and cereal preparations being one of them. The other huge contributor is meat and meat preparations, whose performance rise resulted in the overall rise of exports for many years (example years include 2001, 2004, 2025 and 2019). In fact, the OECD-FAO predicted that global demand for wheat would increase dramatically in the next decade (2020-2030) (Australian Government | Austrade, 2022). Australia’s agriculture demand is projected to grow as global demand for wheat comes largely from developing countries in Asia whose choice of wheat supplier would be Australia due to our close ties with Asia (from our trade agreements) - demand for wheat in these nations is propelled by the need for animal feed and biofuel.</p>
+<p>There was a massive rise in the vegetables and fruit, and meat categories in 2015. This is likely due to both FTAs formed in 2015 and the fact that WTO (World Trade Orginisation) members agree to abolish agricultural export subsidies. China is by far the biggest international market that Australia ships to (they buy ~20% of our agriculture output as of 2015). Although surprisingly, Japan is the second largest buyer (buys ~10% of our agriculture output as of 2015) despite the relative size of the country. Although, Japan is a big buyer of beef as Japan is a small country that doesn’t have room for grazing like Australia has. Because of Australia’s vast land and the fact that the population of Australia is mostly on the coast, this leaves a lot of room for agriculture – particularly grazing animals.</p>
+<p>On top of this, in 2015 all 163 Members of the World Trade Organization agree to abolish all agriculture export subsidies, estimated to be worth more than $15 billion in the WTO&rsquo;s first outcome on agriculture in 20 years. The right to use export subsidies is now only allowed in certain situations.</p>
+<p>Although, looking at the table below, Australia has FTA with most of the major agriculture export markets. India and Australia only made an agreement on 29 December 2022 so the effect of this is not represented in the dataset as there is no data for 2023 yet. The FTA with India focuses on Australian goods that India wants – the following food goods will enter India duty free in 2023: sheep meat, barley, oats and lobster. There is also an array of other food items that will have a reduction of tariffs in future years. Agreements such as this help diversify export markets to avoid over reliance on one market which could be considered a ‘weak point’ if 1es were to be severed or tensions to rise for whatever reason (in this case, China).</p>
+<p>Australia’s amount of money from exports is also highly related to exchange rates. In 2017 when AUD was worth a lot, there was a massive spike in exports. Though, it was 2010 when the Australian dollar intially reached parity with the US dollar for the first time since it was first floated in 1983.</p>
+<p><img src="/images/Australian-Trade/Picture18.png" alt="dataset snapshot"></p>
+<p><img src="/images/Australian-Trade/Picture19.png" alt="dataset snapshot"></p>
+<p>Looking at the imports, we can see that a particularly large category that wasn’t present looking at the export data is subcategory 7 – Coffee, tea, cocoa, spices, and manufactures thereof. The reason for this is because none of these things grow naturally in Australia and would only do well in humid tropical regions such as the very extreme of north Queensland. As such, there is no local production and an extremely high demand for it here. Other categories not as present in the export market as it is in the import data include 8 - feeding stuff and 6 - Sugar.</p>
+<p>Because of how much bigger our exports are from our imports, Australia exports more in almost all subcategories’ than it imports. The only subcategory that breaks this rule is 03 – Fish. This may imply that there is a deficit in the local production of fish but it’s more likely to be that fish is sold locally instead of being exported.</p>
+<p><img src="/images/Australian-Trade/Picture20.png" alt="dataset snapshot"></p>
+<p>Below it can be seen how just how much exports of wheat and cattle change the direction of the total main category of food and live animals. As the lines become quite cluttered towards the bottom of the chart, there is a highlight text box to select the subcategory you want to look at. Even if other categories go up, if the big two subcategories of meat and grain goes down, then the en1re main category goes down. Vice versa is also true.</p>
+<p><img src="/images/Australian-Trade/Picture21.png" alt="dataset snapshot">
+To make the visulisation above, the &lsquo;gradient&rsquo; of a given value (the values in the &lsquo;annalytical pattern sheet in the original datatset&rsquo;) was used to colour the line.</p>
+<p>Below it can be seen that there isn’t a subcategory of imports that has changed majorly such that it impacts the overall main category. All subcategories of food imports seem to be rising at a similar rate. This can be seen in 2021 where the total exports fall because all subcategories of imports fall as well. The only exception to this is in 2017 where imports of misc. goods fall below the import of fruits and vegetables.</p>
+<p><img src="/images/Australian-Trade/Picture22.png" alt="dataset snapshot"></p>
+<p>This point is further illustrated by the fact in this stacked area graph, the import version is relatively ‘flat’ while the export version is turbulent:</p>
+<p><img src="/images/Australian-Trade/Picture23.png" alt="dataset snapshot"></p>
+<h1 id="conclusion-and-recommendations">Conclusion and Recommendations</h1>
+<p>Recommendations are mainly based on the data presented above, researched independent news sources and government reports. There has been an effort to reduce political bias in the recommendations made below as much as possible.</p>
+<p>In terms of food and live animals, Australia has been doing some practices right and should be continued. Most of our FTAs are between Asian countries. There is increasing demand in developing and emerging economies for meat and what especially (more so wheat (Australian Government | Austrade, 2022)). Australian exports are essential to Southeast Asian countries to meet their food security needs. As such, policy should be aimed at helping these industries. Actions that can be done include:</p>
+<ul>
+<li>Domestic initiatives that can be implemented to help these industries is to better subsidise them. Australian farmers are the second least subsidised farmers in the world (Department of Foreign Affairs and Trade, 2020), As such, when Australian products go on the market, they must compete with extremely cheap products that have been subsidised by leading economies such as the US, Japan, India and China.</li>
+<li>Australia is also a member of the World Trade Organisation (WTO). For global changes and reform such as reducing the amount that other countries can provide ‘global trade-and production-distorting domestic support entitlements’ (Department of Foreign Affairs and Trade, 2020) for their own products, forum needs to be sought through the WTO, though this would take a much longer 1me for many reasons. This would be great for Australia though as the countries we export the most to ‘over’ subsidise their food products the most.</li>
+</ul>
+<p>Our FTAs with China in particular is a crux to our total exports. In a recent statement, China has stated that they will review the tariffs made in 2020 and possibly revoke them in 2024 (Michael West Media, 2023). As such, international relations should be upheld so tensions that negatively impact trade do not rise again; especially with China as they are our biggest trade partner and buy a third of our goods (Department of Foreign Affairs, 2022).</p>
+<p>However, while Australia as a country is geared towards mining and agriculture due to our concentrated population areas and vast open lands which are ideal for these exports, it is in Australia’s interest to turn our raw commodities into higher value exports. Australia is an outlier among developed countries / complex economies. Countries based on mining and agriculture are usually developing to emerging economies with economists stating that “Australia’s export profile lacks diversity and sophistication” (Zhou &amp; Satherley, 2022) which makes Australia more susceptible to issues such as international relation tensions and global commodity price changes in key industries. It is also just a good idea in general to diversify the products we export as if one product is ‘hit’ it won’t be as big of a loss. Factors that can impact export output include climate, international relations, market value, other governments’ policies and currency exchange rate (favourable exchange rate makes Australia’s exports more affordable).</p>
+<ul>
+<li>While volatility in global commodity prices is usually considered to be bad, they can work in our industries’ favour as well. For example, Russia is a key player in exporting raw materials such as wheat, coal, and other mineral fuels. With Russia’s invasion of Ukraine in 2022, prices of these commodities have gone up, as seen in the line graphs in the story points above (food and mineral exports have a steep increase in 2022). Although, our domestic customers also pay a heavy price as result of this war (Zhou &amp; Satherley, 2022).</li>
+</ul>
+<p>A good industry to expand into would be machinery and transport as it is a very lucrative industry and an industry that would support our exis1ng mining and agriculture industries (through manufacturing equipment for these industries; majority of our mining equipment is imported from overseas (SEA FREIGHT, 2022)). Our need for local machinery production can be seen in the line chart that showed our imports – a large majority of the imports was machinery and transport. Although, it should be noted that machinery is also a large import for Australia not only because there is little industry producing it here and it is the industry that is very expensive, but also because it is a broader category than the others – it includes technology like computers, TVs and other technology to heavy machinery and electrical equipment.</p>
+<ul>
+<li>As of 2022, Meat and Cereals makeup 31.29% and 38.81% respectively of our total food exports. Collectively, these two subcategories make up 70.1% of our food exports.</li>
+<li>Our food exports made up 8.95% of our total exports in 2022.</li>
+<li>Mineral fuels made up 42.48% of our total exports in 2022.</li>
+</ul>
+<p>It is also in Australia’s interest to not just diversify what we export, but which markets we export to. As shown through the tariffs imposed by China in 2020, we currently have an over reliance on China. While this makes sense as they are one of the biggest markets in the world and it wouldn’t make sense to isolate China as they are too big and ‘central’, it would s1ll be ideal to widen our export base. In the geographical map story point, Australia mostly has FTAs with Asia. Australia’s only FTA within Europe is the United Kingdom (which was only made in 2023). Though, there have been talks recently with the European Union about free trade to Europe, with agriculture being a ‘s1cking point’ - “Ultimately, our negotiations with the EU will only be concluded when we have a good deal and one that includes new market access for our agricultural products” Anthony Albanese (The Guardian, 2023). While it is essential that this deal be made, it should also not be rushed if it has bad terms for Australia.</p>
+<p>While not the focus of this post, there are some recommendations to be made about the other main categories. Mineral fuels are our biggest export. Especially coal and briquettes. While in the dataset, these two are lumped together, we mainly export raw coal (thermal coal is raw coal (Russell, 3)). Though, to increase monetary gain from this source, we could process the coal before shipping it. Processing involves changing the coal into other forms like briquettes.</p>
+<ul>
+<li>Although it should also be considered that a global trend is to move away from fuel sources such as coal and oil and more towards renewables (Zhou &amp; Satherley, 2022). This should especially be considered as because of Australia’s geographical features; it has great poten1al for producing renewable energy - more than most other countries (Graham, 2023) (especially more than European countries whcih are basically natural dearths for resources such as sun, wind, and water currents to make renewables but have a great demand for renewables). Although there are many other factors to consider for and against – the main one being that Australia’s export market is mostly for coal and removing this source of income would be problematic. This is a complex topic that will not be discussed in this post.</li>
+</ul>
+<p>In conclusion, Australia’s national identity as a mining and agriculture-based country is one that has worked for Australia and made it a prosperous country. While our source of exports should be diversified, when looking to grow our economy, these key industries should not be ignored. The Australian agriculture business is a very lucrative one that with a few policy changes as stated above, can stand to succeed even more.</p>
+<h1 id="references">References</h1>
+<p>Australian Government | Austrade. (2022, November 17). Australian exporters to benefit from long-term increase in global demand for wheat. Retrieved from Australian Government | Australian Trade and Investment Commission: <a href="https://www.austrade.gov.au/en/news-and-analysis/analysis/australian-exporters-to-benefit-from-long-term-increase-in-global-demand-for-wheat">https://www.austrade.gov.au/en/news-and-analysis/analysis/australian-exporters-to-benefit-from-long-term-increase-in-global-demand-for-wheat</a></p>
+<p>Australian Government | Department of Foreign Affairs and Trade. (2023, May 31). Australia&rsquo;s free trade agreements (FTAs). Retrieved from Australian Government | Department of Foreign Affairs and Trade: <a href="https://www.dfat.gov.au/trade/agreements/trade-agreements">https://www.dfat.gov.au/trade/agreements/trade-agreements</a></p>
+<p>Australian Government. (n.d.). Site glossary. Retrieved from Australian Government | FTA Portal: <a href="https://www.dfat.gov.au/trade/agreements/trade-agreements">https://www.dfat.gov.au/trade/agreements/trade-agreements</a></p>
+<p>Department of Foreign Affairs. (2022). Background Paper: The Australia-China Trade and Investment Rela2onship.
+Retrieved from Australian Government | Department of Foreign Affairs: <a href="https://www.dfat.gov.au/trade/agreements/in-force/chafta/negotiations/Pages/background-paper-the-australia-china-trade-and-investment-relationship">https://www.dfat.gov.au/trade/agreements/in-force/chafta/negotiations/Pages/background-paper-the-australia-china-trade-and-investment-relationship</a>.</p>
+<p>Department of Foreign Affairs and Trade. (2020). Agricultural and food trade. Retrieved from Australian Government | Department of Foreign Affairs and Trade: <a href="https://www.dfat.gov.au/about-us/publications/trade-investment/trade-at-a-glance/trade-at-a-glance-2015/agriculture-and-food-trade">https://www.dfat.gov.au/about-us/publications/trade-investment/trade-at-a-glance/trade-at-a-glance-2015/agriculture-and-food-trade</a></p>
+<p>Dziedzic, S. (2022, April 2). &lsquo;Historic&rsquo; trade agreement with India will allow Australia to reduce economic dependence on China, says government. Retrieved from ABC News: <a href="https://www.abc.net.au/news/2022-04-02/australiaindia-comprehensive-economic-coopera1on-agreement/100959934">https://www.abc.net.au/news/2022-04-02/australiaindia-comprehensive-economic-coopera1on-agreement/100959934</a></p>
+<p>Export Finance Australia, Australian Government. (2022, October). Australia—Beverage exports diversifying by market and product. Retrieved from Australian Government | Export Finance Australia: <a href="https://www.exportfinance.gov.au/resources/world-risk-developments/2022/october/australia-beverage-exports-diversifying-by-market-and-product/">https://www.exportfinance.gov.au/resources/world-risk-developments/2022/october/australia-beverage-exports-diversifying-by-market-and-product/</a></p>
+<p>Graham, P. (2023, July 26). Australia is touted as a future clean energy ‘superpower’ – but research suggests other na2ons will outperform us. Retrieved from CSIRO: <a href="https://www.csiro.au/en/news/all/articles/2023/july/australia-energy-future">https://www.csiro.au/en/news/all/articles/2023/july/australia-energy-future</a></p>
+<p>Michael West Media. (2023, October 30). Op2mism of China tariffs liSing ahead of PM visit. Retrieved from Michael West Media: Independant Journalists: <a href="https://michaelwest.com.au/optimism-of-china-tariffs-lifting-ahead-of-pm-visit/">https://michaelwest.com.au/optimism-of-china-tariffs-lifting-ahead-of-pm-visit/</a></p>
+<p>Russell, C. (3, July 2023). Australia&rsquo;s exports of energy transi2on metals to top thermal coal. Retrieved from Reuters: <a href="https://www.reuters.com/business/energy/australias-exports-energy-transition-metals-top-thermal-coal-russell-2023-07-03/">https://www.reuters.com/business/energy/australias-exports-energy-transition-metals-top-thermal-coal-russell-2023-07-03/</a>.</p>
+<p>SEA FREIGHT. (2022, October 28). Impor2ng Manufacturing Machinery into Australia: The Ul2mate Guide. Retrieved from ice: interna1onal cargo express: <a href="https://icecargo.com.au/importing-manufacturing-machinery/">https://icecargo.com.au/importing-manufacturing-machinery/</a></p>
+<p>Speers, D., &amp; Borys, S. (2023, October 22). China agrees to review tariffs on Australian wine ahead of Anthony Albanese&rsquo;s visit to Beijing. Retrieved from ABC News: <a href="https://www.abc.net.au/news/2023-10-22/china-tradetariffs-australian-wine-beijing/103006854">https://www.abc.net.au/news/2023-10-22/china-tradetariffs-australian-wine-beijing/103006854</a></p>
+<p>The Guardian. (2023, July 12). Australia and EU talks on free trade agreement break down without deal. Retrieved from The Guardian: <a href="https://www.theguardian.com/australia-news/2023/jul/11/australia-and-eu-talks-on-free-trade-agreement-break-down-without-deal#:~:text=Australia%20and%20the%20European%20Union,products%20access%20to%20the%20bloc">https://www.theguardian.com/australia-news/2023/jul/11/australia-and-eu-talks-on-free-trade-agreement-break-down-without-deal#:~:text=Australia%20and%20the%20European%20Union,products%20access%20to%20the%20bloc</a>.</p>
+<p>World Trade Organiza2onAustralian Government | Department of Foreign Affairs and Trade. (2017). Retrieved from Australian Government | Department of Foreign Affairs and Trade: <a href="https://www.dfat.gov.au/trade/organisations/wto/Pages/agricultural-trade">https://www.dfat.gov.au/trade/organisations/wto/Pages/agricultural-trade</a></p>
+<p>Zhou, I., &amp; Satherley, T. (2022). Global trade risks and opportuni2es. Retrieved from Parliament of Australia:
+<a href="https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/pubs/BriefingBook47p/GlobalTradeRisksAndOpportunities">https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/pubs/BriefingBook47p/GlobalTradeRisksAndOpportunities</a></p>
+
+        </p>
+    </div>
+</div>
+
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#data-preparation">Data Preparation</a></li>
+    <li><a href="#data-analysis">Data Analysis</a>
+      <ul>
+        <li><a href="#all-main-categories-and-subcategories">All Main Categories and SubCategories</a></li>
+        <li><a href="#food-and-live-animals">Food and Live Animals</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion-and-recommendations">Conclusion and Recommendations</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2024 Keisha Gordon</span>
+    
+</footer>
+</body>
+</html>

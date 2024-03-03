@@ -43,5 +43,12 @@
       <guid>https://keisha-g.github.io/projects/honoursproject/</guid>
       <description>I undertook my honours during my fourth year of university. In my research project, I wanted to experiment with different types of dataset collection and preprocessing methodologies and how they affected the performance of Topic models (a type of AI model).&#xA;The goal of a topic model is to summarise a long piece of text/s by examining the co-occurrence patterns of words and organising the words it sees into a &amp;rsquo;topic&#39;.</description>
     </item>
+    <item>
+      <title>Data Analytics Project: Annalysing Australian Trade 2023</title>
+      <link>https://keisha-g.github.io/projects/dataanalytics/</link>
+      <pubDate>Mon, 11 Sep 2023 17:36:20 +1100</pubDate>
+      <guid>https://keisha-g.github.io/projects/dataanalytics/</guid>
+      <description>The visulisations in this post are demonstrations of skills in excel and tableau (although tableau visulisations do not have interactivity as intended due to licensing issues).&#xA;Introduction This page is a report on data about Australian international trade. This report will highlight key information and trends on Australian international imports and exports with data that spans from 1988 - 2022. This report will also focus on the import &amp;amp; export main category of &amp;lsquo;0: food and live animals&amp;rsquo; for closer analysis.</description>
+    </item>
   </channel>
 </rss>
