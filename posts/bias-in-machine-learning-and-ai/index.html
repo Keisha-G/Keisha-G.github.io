@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Bias in Machine Learning and AI</title>
+    <meta name="description" content="How Representation Bias in Data can Create Inaccurate AI and ML systems.">
+    <meta name="keywords" content='blog, gokarna, hugo, Data Analytics, Portfolio, AI, Machine Learning, Bias'>
+
+    <meta property="og:url" content="https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bias in Machine Learning and AI">
+    <meta property="og:description" content="How Representation Bias in Data can Create Inaccurate AI and ML systems.">
+    <meta property="og:image" content="https://keisha-g.github.io/images/avatar.webp">
+    <meta property="og:image:secure_url" content="https://keisha-g.github.io/images/avatar.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bias in Machine Learning and AI">
+    <meta name="twitter:description" content="How Representation Bias in Data can Create Inaccurate AI and ML systems.">
+    <meta property="twitter:domain" content="https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/">
+    <meta property="twitter:url" content="https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/">
+    <meta name="twitter:image" content="https://keisha-g.github.io/images/avatar.webp">
+
+    
+    <link rel="canonical" href="https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.315e3e4471e2465f34b6c92d59edceac6f6b3d3844df51bbaac4e5f7227b04e4.js" integrity="sha256-MV4&#43;RHHiRl80tsktWe3OrG9rPThE31G7qsTl9yJ7BOQ="></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://keisha-g.github.io/">
+                <img src='/images/avatar.webp' alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://keisha-g.github.io/">Data Analytics Portfolio</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://keisha-g.github.io/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://keisha-g.github.io/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://keisha-g.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://keisha-g.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://keisha-g.github.io/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://keisha-g.github.io/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://keisha-g.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://keisha-g.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Bias in Machine Learning and AI</h1>
+        <small role="doc-subtitle">How Representation Bias in Data can Create Inaccurate AI and ML systems.</small>
+        <p class="post-date">May 27, 2022
+        
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://keisha-g.github.io/tags/data-analytics">Data Analytics</a></li>
+        
+            <li class="post-tag"><a href="https://keisha-g.github.io/tags/ai">AI</a></li>
+        
+            <li class="post-tag"><a href="https://keisha-g.github.io/tags/machine-learning">Machine Learning</a></li>
+        
+            <li class="post-tag"><a href="https://keisha-g.github.io/tags/bias">Bias</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p>With the increasing amount of commercial use of machine learning (ML) systems, these systems&rsquo; fairness and unbiased nature become an issue of vital importance. These systems are being employed to make decisions that are usually protected by anti-discrimination laws and, thus, unmonitored, are having an adverse effect on society. The interest in this field is not just one of social importance but also one of utility. A bias based unfairly on protected characteristics instead of other attributes would not result in the most efficient, &lsquo;merit-based&rsquo; outcome. This post covers how bias can infiltrate outcomes predicted by ML systems, evaluate current solutions against bias, and outline new directions in this field.</p>
+<p>The use of ML in Australia is ubiquitous. According to a survey by global IT firm ‘Infosys’, fifty-one per cent of Australian organisations that were surveyed are deploying AI in the context of M [1]L. The benefits of machine learning are very enticing, namely, the newly available ability to process large amounts of multivariable data. However, if these ML systems are not carefully calibrated, results akin to discrimination can ensue. The purpose of ML is to learn from its training data and predict outcomes on future data. In other words, be ‘biased’ towards results mimicking the training data shown to it. It is crucial to mention that when mentioning ‘bias’ in this post, the word is used only for bias with unfair results and not for the bias that allows for ML systems to be accurate in the first place.</p>
+<h1 id="bias-in-data-or-representation-bias">Bias in Data or Representation Bias</h1>
+<p>ML systems learn from historical data inputted and generalises the pattern it learns to new data. Therefore, the quality of a ML system depends majorly on the quality of the data. A taxonomy of the different ways data can be biased in ML is outlined in [2], and the multitude of ways bias can enter through an algorithm is documented in [3]. However, this post will only outline one prevalent type of bias - representation bias.</p>
+<p>Representation bias occurs when the training data used is not representative of the population that the system will be used on. The lack of diversity in a data set can be for many reasons. A reason could be a lack of accessibility when gathering data. For example, using a smartphone app to collect data incidentally would exclude older-aged participants. Lack of representation in data results in a phenomenon known as ‘overfitting’. A system can ‘over fit’ when it learns from data exclusively representing one group, and instead of learning the general trend from the data, it ‘memorises’ the training data instead. For example, an algorithm called PULSE was made that could take in a pixelated image of a face as input and return them as high-resolution pictures. However, since PULSE was trained mainly on Caucasian faces when a pixelated photo of Barack Obama was put into the system, the output was also Caucasian as seen below.</p>
+<p><a href="https://cdn.vox-cdn.com/thumbor/uyCclHykXcW6RZTpNokOftVjkjc=/55x85:768x536/1200x628/filters:focal(400x300:401x301)/cdn.vox-cdn.com/uploads/chorus_asset/file/20046714/face_depixelizer_obama.jpg">example of bias in machine learning</a></p>
+<p>It is reasonable to think that removing protected attributes such as race, age and religion from training data would remove bias significantly. However, this is not effective due to ‘redundant encodings’, which decode sensitive information from other attributes [4]. Because of research in this field, it is now known a ML system needs to have a bias mitigation process as a part of it’s model or it will inherently learn bias.</p>
+<h1 id="bias-mitigation--current-solutions">Bias Mitigation &amp; Current Solutions</h1>
+<p>Generally, solutions to bias in ML can be sorted into three different categories, Pre-processing, In-Processing and Post-Processing.</p>
+<h2 id="pre-processing">Pre-Processing</h2>
+<p>Pre-processing techniques transform the training data so that bias that arises from data is minimised. The idea behind methods like these [5] [6] is that since bias usually originates from data, one only needs to clean it to eliminate bias. These methods strategically reclassify data points close to the decision boundary or classification margin. Then, bias testing would be performed (and continually be performed since the algorithms constantly evolve). Bias testing involves engineering an artificial data point with the same characteristics as another data point. Except, on the artificial data point, a protected value is changed (e.g., Religion or Gender). Both inputs are put through the ML system to check whether the output is the same [6]. The benefits to pre-processing approaches are that they are understandable and easy to implement. However, since the method is also very heuristic and requires subjective opinion on balancing data between the protected attributes, implementation is a case of trial and error and can be more time-consuming.</p>
+<h2 id="in-processing">In-Processing</h2>
+<p>In-Processing methods for eliminating bias change the algorithms themselves by either changing the function or by imposing a constraint. An example of an In-processing method is featured in [9]. This method works to encode fairness as a regulariser during regularisation (process that reduces magnitude of weights and thus reduces overfitting). Another in-processing algorithm referenced in [8] known as ‘adversarial debiasing’. This method consists of two parts, an adversary and a predictor. The model tries to maximise the predictor; then, this data is passed to a whole other network known as the ‘adversary’, which tries to predict protected attributes. The ability of the adversary to predict the protected attribute/s is minimised. Whilst in-processing methods produce results that should be less biased after training; there are issues. In ML, the processes between the input and output stage are not transparent. The internal workings of a ML are usually self-calibrated and, thus, are known as a ‘black-box’ (especially in very complex systems). This means to implement these methods, subjective interpretation or casual assumptions about specific features must be made. This issue is highly pertinent in relation to deep learning. Another issue that is also prevalent in pre-processing methods, as well as in-processing methods, is privacy. These methods require direct access to data inputs, which could be considered a privacy breach.</p>
+<h2 id="post-processing">Post-Processing</h2>
+<p>Post-processing techniques are performed after the model is trained. The idea behind post-processing [9] is that the ‘in-process’ is regarded as a ‘black-box’. Hence, it is considered questionable to tamper with those working variables. Instead, post-processes only rely on the aggregation of the prediction (outcome), the protected attribute and the label. For example, in [10], the decision boundary of a ‘good’ vs a ‘bad’ outcome is differentiated over groups. This method is successfully implementing equality despite seeming partisan. As stated above, ML systems without any modification lean towards bias. Thus, [10] is effective as testing has found it heightens accuracy classifiers while also passing bias testing. The benefits of these types of approaches, in general, is that they only depend on the joint distribution of outputted variables, meaning that the process is ‘oblivious’. This means that post-processing preserves the idea of the model being a ‘black-box’ and that data integrity is preserved. However, the exact implementation details of these processes are complicated by mathematical detail. While the ‘black-box’ approach has advantages, since working details are obscured, post-processing methods will inevitably skip over nuance. As said in [9], “Our process should not be considered a conclusive proof of fairness … Rather we envision our framework as providing a reasonable way of discovering and measuring potential concerns that require further scrutiny.”</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Whilst numerous bias mitigation techniques have surfaced over recent years, there are still some future challenges, particularly multidisciplinary, in the field.
+- Explainable ML: While ML has been advancing, its efficiency is still undermined by its un-debuggability and the inability of a system to explain ‘why’ for each component in a human-understandable way. When transparency in ML is achieved, pre and in processing methods to mitigate bias will advance majorly since they will not rely on subjective interpretations of ML components.</p>
+<p>Classification of what Bias Mitigation Methods are Suitable to Which Algorithms and Situations: The current bias mitigation methods are promising but have not been tested extensively for which has the best performance and what data modes and algorithms work best with which algorithms. This testing and documentation is important for implementation and also for finding new solutions to bias in ML.</p>
+<p>Law and bias in ML – Multidisciplinary Analysis: With the recent commercialisation of ML, the need to have a strong legal basis in which to dictate the creation of safe ML with normalised standards (such as benchmark data sets) has never been greater. Other issues such as copyright and legal responsibility of AI also need to be analysed in a multidisciplinary sphere to capture the nuances of both disciplines. Currently, Australia only has broad ethics frameworks implying self-governance. A standstill is in law development as a 2019 discussion paper from the Australian Government has stated, “We require input from stakeholders across government, business, academia and broader society. … Further collaboration will be of the utmost importance in reaching these goals.” [11]</p>
+<p>To conclude, this post has summarised the issue of bias in ML systems and has reviewed some current solutions presented in the field. It also goes over future challenges and research directions related to the area of bias in ML.</p>
+<h1 id="references">References:</h1>
+<p>[1] Leadership in the Age of AI: Adapting, Investing and Reskilling to Work Alongside AI. (2018). [online] Infosys. Bengaluru, India: Infosys. Available at: <a href="https://www.infosys.com/age-of-ai/">https://www.infosys.com/age-of-ai/</a> [Accessed 1 Mar. 2021].
+[2] Suresh, H. and Guttag, J.V., 2019. A framework for understanding unintended consequences of machine learning. arXiv preprint arXiv:1901.10002.
+[3] Danks, D. and London, A.J., 2017, August. Algorithmic Bias in Autonomous Systems. In IJCAI (Vol. 17, pp. 4691-4697).
+[4] Pedreshi, D., Ruggieri, S. and Turini, F., 2008, August. Discrimination-aware data mining. In Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 560-568).
+[5] d&rsquo;Alessandro, B., O&rsquo;Neil, C. and LaGatta, T., 2017. Conscientious classification: A data scientist&rsquo;s guide to discrimination-aware classification. Big data, 5(2), pp.120-134.
+[6] Kamiran, F., Calders, T. and Pechenizkiy, M., 2010, December. Discrimination aware decision tree learning. In 2010 IEEE International Conference on Data Mining (pp. 869-874). IEEE.
+[7] Besse, P., del Barrio, E., Gordaliza, P., Loubes, J.M. and Risser, L., 2020. A survey of bias in Machine Learning through the prism of Statistical Parity for the Adult Data Set. arXiv preprint arXiv:2003.14263.
+[8] Bellamy, R.K., Dey, K., Hind, M., Hoffman, S.C., Houde, S., Kannan, K., Lohia, P., Martino, J., Mehta, S., Mojsilovic, A. and Nagar, S., 2018. AI Fairness 360: An extensible toolkit for detecting, understanding, and mitigating unwanted algorithmic bias. arXiv preprint arXiv:1810.01943.
+[9] Berk, R., Heidari, H., Jabbari, S., Joseph, M., Kearns, M., Morgenstern, J., Neel, S. and Roth, A., 2017. A convex framework for fair regression. arXiv preprint arXiv:1706.02409.
+[10] Hardt, M., Price, E. and Srebro, N., 2016. Equality of opportunity in supervised learning. arXiv preprint arXiv:1610.02413.
+[11] Dawson D and Schleiger E* , Horton J, McLaughlin J, Robinson C∞, Quezada G, Scowcroft J, and Hajkowicz S† (2019) Artificial Intelligence: Australia’s Ethics Framework. Data61 CSIRO, Australia.</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+
+    
+    
+    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
+        
+        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+    </svg>
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
+    
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bias-in-data-or-representation-bias">Bias in Data or Representation Bias</a></li>
+    <li><a href="#bias-mitigation--current-solutions">Bias Mitigation &amp; Current Solutions</a>
+      <ul>
+        <li><a href="#pre-processing">Pre-Processing</a></li>
+        <li><a href="#in-processing">In-Processing</a></li>
+        <li><a href="#post-processing">Post-Processing</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References:</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2024 Keisha Gordon</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

@@ -15,5 +15,12 @@
       <guid>https://keisha-g.github.io/posts/web-scraping-twitter/</guid>
       <description>For my honours project (for more details, check the &amp;lsquo;Projects&amp;rsquo; tab), I needed to build a program that would scrape Twitter/X for tweets. This was done using the snscrape library and Python. This project also had a front-end interface in order to give the program inputs instead of doing it through the CLI.&#xA;The program takes in the number of total tweets wanted and what hashtag you want the scraper to crawl through to collect them.</description>
     </item>
+    <item>
+      <title>Bias in Machine Learning and AI</title>
+      <link>https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/</guid>
+      <description>With the increasing amount of commercial use of machine learning (ML) systems, these systems&amp;rsquo; fairness and unbiased nature become an issue of vital importance. These systems are being employed to make decisions that are usually protected by anti-discrimination laws and, thus, unmonitored, are having an adverse effect on society. The interest in this field is not just one of social importance but also one of utility. A bias based unfairly on protected characteristics instead of other attributes would not result in the most efficient, &amp;lsquo;merit-based&amp;rsquo; outcome.</description>
+    </item>
   </channel>
 </rss>

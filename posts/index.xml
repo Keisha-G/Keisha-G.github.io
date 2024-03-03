@@ -22,5 +22,12 @@
       <guid>https://keisha-g.github.io/posts/data-visulisations/</guid>
       <description>There are many different types of data visulisations. However, a skilled data analyst will use the most effective type of visulisation to visually aid the &amp;lsquo;storytelling&amp;rsquo; / what story the data shows. Not only do suitable data vcisulisations aid in this, but bad choices for data visulisations can mislead an audience to believing falsehoods or just confuse them.&#xA;The following graph is the standard &amp;lsquo;bad&amp;rsquo; visulisation - looking at the graph below, what do you immediately infer about gun deaths in Florida?</description>
     </item>
+    <item>
+      <title>Bias in Machine Learning and AI</title>
+      <link>https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://keisha-g.github.io/posts/bias-in-machine-learning-and-ai/</guid>
+      <description>With the increasing amount of commercial use of machine learning (ML) systems, these systems&amp;rsquo; fairness and unbiased nature become an issue of vital importance. These systems are being employed to make decisions that are usually protected by anti-discrimination laws and, thus, unmonitored, are having an adverse effect on society. The interest in this field is not just one of social importance but also one of utility. A bias based unfairly on protected characteristics instead of other attributes would not result in the most efficient, &amp;lsquo;merit-based&amp;rsquo; outcome.</description>
+    </item>
   </channel>
 </rss>
